@@ -34,8 +34,6 @@ class MyApp extends StatelessWidget {
         "/counterplus": (context) => const CounterPlus(),
         "/toplama": (context) => const Toplama(),
       },
-
-      // home: const TodoListMysql(),
     );
   }
 }
