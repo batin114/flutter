@@ -11,6 +11,7 @@ import 'screens/sayisalLoto.dart';
 import 'screens/todolist_db.dart';
 import 'utils/drawer.dart';
 import 'screens/ortalamatik.dart';
+import 'screens/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,8 +25,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'TodoListMysql',
       theme: ThemeData(primarySwatch: Colors.teal),
+      initialRoute: "/",
       routes: {
-        "/": (context) => const TodoListMysql(),
+        "/": (context) => const HomePage(),
         "/todolistdb": (context) => const TodoListMysql(),
         "/ortalamatik": (context) => const Ortalamatik(),
         "/calc": (context) => const Calculator(),
@@ -34,6 +36,8 @@ class MyApp extends StatelessWidget {
         "/counterplus": (context) => const CounterPlus(),
         "/toplama": (context) => const Toplama(),
       },
+
+      // home: const TodoListMysql(),
     );
   }
 }
